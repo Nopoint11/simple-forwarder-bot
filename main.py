@@ -215,7 +215,7 @@ def unban_user(bot, update):
 def main():
     global dispatcher, updater, Token, Blacklist, admin
     load_config()
-    updater = Updater(Token)
+    updater = Updater('TOKEN', use_context=True)
     dispatcher = updater.dispatcher
     fwd_text_handler = MessageHandler(Filters.all & (~Filters.command),
                                       read_text_message)
