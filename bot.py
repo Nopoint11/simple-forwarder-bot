@@ -102,14 +102,14 @@ try:
     def welcome(message):
         bot.send_message(
             message.chat.id,
-            '这是 @tooru_chan 制作的频道投稿机器人，直接向本机器人发送你要投稿的消息即可，但是spam将会被本机器人拉进黑名单。\n注意在没有提示转发成功的消息之前，管理员是看不见你的话的。'
+            '欢迎使用本Bot，您所发送的消息均会被转发给我的主人。\n注意在没有提示转发成功的消息之前，小主人是看不见你的话的。'
         )
 
     @bot.message_handler(commands=['help'])
     def help(message):
         bot.reply_to(
             message,
-            '这是 @tooru_chan 制作的频道投稿机器人，直接向本机器人发送你要投稿的消息即可，但是spam将会被本机器人拉进黑名单。\n注意在没有提示转发成功的消息之前，管理员是看不见你的话的。'
+            '欢迎使用本Bot，您所发送的消息均会被转发给我的主人。\n注意在没有提示转发成功的消息之前，小主人是看不见你的话的。'
         )
 
     @bot.message_handler(commands=['info'])
